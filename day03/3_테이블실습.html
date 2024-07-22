@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>테이블 실습</title>
+    <style>
+        table {
+            margin: 0 auto;
+
+        }
+        th,
+        td {
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+        }
+        thead{
+            background-color: pink;
+        }
+        tbody{
+            background-color: blanchedalmond;
+        }
+        tfoot {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>테이블 실습</h1>
+
+    <table border="1">
+        <caption>행과 열 합치기</caption>
+       
+        <tbody>
+            <tr>
+                <th>1번째 제목</th>
+                <th>2번째 제목</th>
+                <th rowspan="3">3번째 제목</th>
+            </tr>
+            <tr>
+                <td>1번째 셀</td>
+                <td>2번째 셀</td>
+              
+            </tr>
+            <tr>
+                <td colspan="2">3번째 셀</td>
+               
+         
+            </tr>
+            <tr>
+                <td rowspan="2">4번째 셀</td>
+                <td>5번째 셀</td>
+                <td>6번째 셀</td>
+            </tr>
+            <tf>
+               
+                <td colspan="2">7번째 셀</td>
+            </tf>
+        </tbody>
+       
+    </table>
+</body>
+
+</html>

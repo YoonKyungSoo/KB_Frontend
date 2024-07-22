@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼</title>
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <h2>폼</h2>
+    <form action="/user/join" method="host">
+        <p>
+            <!-- 날라오는 데이터를 구분하기 위해 쓰임 ( name ) -->
+            <!-- 처음 나타내는 데이터 값 value = apple -->
+            <input type="text" name="userid" value="apple">
+
+        </p>
+        <p>
+            <input type="password" name="userpassword" id="" placeholder="비밀번호를 입력하세요!" size="30" max="12" required>
+        </p>
+        <p>
+        <fieldset>
+            <legend>성별</legend>
+            <label>남자
+                <input type="radio" name="usergender" id="" value="M">
+            </label>
+            <label for="W">여자</label>
+            <input type="radio" name="usergender" id="W" value="W">
+        </fieldset>
+        </p>
+
+        <input type="checkbox" id="" value="A" name="blood"></p>
+        <input type="checkbox" id="" value="B" name="blood"></p>
+        <input type=" checkbox" id="" value="O" name="blood"></p>
+        <input type=" checkbox" id="" value="AB" name="blood"></p>
+        <p>
+        <p>
+            <input type="file" name="" id="">
+        </p>
+        <p>
+            <input type="email" name="" id="" value="apple@juice.com" readonly>
+        </p>
+        <p>
+            <input type="url" name="" id="">
+        </p>
+        <p>
+            <input type="tel" name="" id="">
+        </p>
+        <p>
+            <input type="date" name="" id="">
+        </p>
+        <p>
+            <!-- 커지는 범위, 최댓값, 최소값 -->
+            <input type="number" step="5" max="100" min="0">
+        </p>
+        <p>
+            <input type="color" name="" id="">
+        </p>
+        <p>
+            <!-- 옆에 X 버튼이 생김 -->
+            <input type="search" name="" id="">
+        </p>
+        <p>
+            <!-- 3가지 속성이 필수! -->
+            <input type="range" min="0" max="10" step="2">
+        </p>
+        <p>
+            <select name="lang" id="">
+                <option value="backend">JAVA</option>
+                <option value="dbms">MySQL</option>
+                <option value="frontend" label="HTML"></option>
+            </select>
+        </p>
+        <p>
+            <textarea name="content" cols="30" rows="10">Hello
+        
+    </textarea>
+        </p>
+        <p>
+            <!-- 자기가 속해있는 form을 제출하는 것 -->
+            <input type="submit" value="회원가입">
+
+            <!-- 자기가 속해있는 form을 초기화 함 -->
+            <input type="reset" value="초기화">
+            <input type="button" value="아무기능없는 버튼">
+        </p>
+    </form>
+</body>
+
+</html>
