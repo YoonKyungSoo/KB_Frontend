@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료형</title>
+</head>
+
+<body>
+    <h2>자료형</h2>
+</body>
+<script>
+    let num1 = 10;
+    let num2 = 5;
+    let num3 = 3e3; //3 * 10의 3제곱
+    console.log(num3);
+
+
+    // 10 + 5 = 15
+    // console.log(num1 + "+" + nume3 + "=" + (num1+num2));
+
+    // 문자열 값이 됨 ``
+    // console.log(`${num1}+ ${num2} = ${num1 + num2}`);
+    let str = `${num1}+ ${num2} = ${num1 + num2}`
+    console.log(str);
+
+    let str1 = "5";
+    let str2 = 'Hello';
+
+    // ``는 중간에 엔터도 가능함
+    let str3 = `안녕
+    하세요`;
+
+    // 문자열에 특정 값을 +면 문자열 연결이 가능하기 때문에
+    // 자동 형변환이 일어나지 않는다. 
+    console.log(num1 + str1)
+
+    // 문자열에 특정 값을 *,-,/ 면 특정 연산이 없기 때문에 
+    // 자동 형변환을 한 후 숫자끼리의 연산으로 해결한다.
+    console.log(num1 * str1);
+
+    // NaN -> 숫자가 아니라는 타입의 숫자 타입, not a number 숫자가 아니라는 값
+    console.log(str1 * str2);
+
+    // 백쿼드 (`)로 선언한 문자열은 그 형태 그대로의 값이다. 
+    console.log(str3);
+
+    // 상수 선언 
+    const PI = 3.14;
+    // 실행 불가 -> 상수로 선언된건 값을 바꿀 수 없음
+    // PI = 3.24;
+
+    const mycar = { model: "Ferrari", color: "Red", price: 70000 };
+    console.log(mycar.model);
+    mycar.color = "yellow";
+    console.log(mycar.color);
+
+    let b1 = true;
+    b1 = 10 < 3;
+    console.log(b1);
+
+    let ud;
+    console.log(typeof (ud));
+
+    let nu = null;
+    console.log(typeof (nu));
+
+    console.log("0" == 0); //true
+    console.log([] == 0); //true
+    console.log([] == "0"); // false
+    console.log("\t" == 0); //true
+    console.log("\t" == []); //false
+</script>
+
+</html>
