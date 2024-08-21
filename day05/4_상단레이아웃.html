@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상단 레이아웃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header,
+        aside,
+        section,
+        footer {
+            border: 1px solid black;
+        }
+
+        header {
+            height: 120px;
+            margin-bottom: 20px;
+            background-color: black;
+        }
+
+        #contents {
+            height: 500px;
+            margin-bottom: 20px;
+        }
+#contents>*{
+    height: 500px;
+}
+aside {
+    width: 250px;
+}
+#left-sidebar{
+    float: left;
+    margin-right: 20px;
+}
+#right-sidebar{
+    float: right;
+}
+section{
+    width: 460px;
+    float: left;
+}
+        footer {
+            height: 120px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div id="contents">
+            <aside id="left-sidebar"></aside>
+            <section></section>
+            <aside id="right-sidebar"></aside>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

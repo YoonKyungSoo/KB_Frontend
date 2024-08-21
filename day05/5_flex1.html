@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex - 1</title>
+    <style>
+        #container div {
+            width: 400px;
+            border: 1px solid black;
+            background-color: gold;
+        }
+
+        #container {
+            border: 1px solid red;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            /* 줄바꿈 안하고 한줄에 꾸겨넣자! */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* 넘치는 게 위로 올라가게 해버림 */
+            flex-wrap: wrap-reverse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>flex - 1</h2>
+    <div id="container">
+        <div class="box1">
+            <h2>1</h2>
+        </div>
+        <div class="box2">
+            <h2>2</h2>
+        </div>
+        <div class="box3">
+            <h2>3</h2>
+        </div>
+    </div>
+</body>
+
+</html>

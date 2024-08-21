@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+header {
+    padding: 20px;
+ border: 1px solid red;
+    margin-bottom: 20px;
+    display: flex;
+}
+footer {
+    clear: both;
+ background-color: white;
+ border: 3px solid red;
+ height: 50px;
+} 
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#contents {
+   
+    margin-bottom: 20px;
+    height: 600px;
+
+}
+#contents section {
+    border: 1px solid red;
+    width: 700px;
+    height: 600px;
+    float: left;
+    
+}
+#contents aside {
+    height: 600px;
+    border: 1px solid blue;
+    width: 280px;
+    float: right;
+ 
+}
+
+.article1{
+    border: 1px solid black;
+    height: 300px;
+}
+.article2{
+    border: 1px solid orange;
+    height: 300px;
+}
+.greentable1{
+    border: 1px solid green;
+    height: 130px;
+    margin-bottom: 10px;
+}
+.greentable2{
+    border: 1px solid green;
+    height: 130px;
+}
+.article1{
+    padding: 10px;
+}
+.article2{
+    display: flex;
+}
+.table{
+        border: 1px solid gray;
+        width:450px;
+    }
+.purple{
+    border: 1px solid purple;
+    width: 250px;
+}
+.purple-one{
+    border: 1px solid black;
+    height: 200px;
+    text-align: center;
+}
+#purple-one{
+    border: 1px solid black;
+    height: 180px;
+    width: 180px;
+ margin: 0 auto;
+ margin-top: 10px;
+}
+.purple-two{ 
+    display: flex;
+    height: 100px;
+   justify-content: space-around;
+}
+#purple-two{
+    border: 1px solid black;
+    width: 80px;
+    height: 90px;
+    margin: 3px;
+    
+}
+.hi{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.table{
+    line-height: 50px;
+}
+.table table{
+border-collapse: collapse;
+width: 430px;
+height: 250px;
+margin: 0 auto;
+margin-top: 20px;
+text-align: center;
+}
+.table td{
+    border: 1px solid black;
+
+}
+#header{
+    border: 1px solid blue;
+    text-align: center;
+
+}
+.header1{
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.header2{
+    width: 770px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+.header3{
+    width: 80px;
+    text-align: center;
+    line-height: 45px;
+}
+#header2{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    line-height: 30px;
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이단 레이아웃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 20px;
+            background-color: beige;
+            margin-bottom: 20px;
+        }
+
+        #contents {
+            background-color: aliceblue;
+            margin-bottom: 20px;
+            height: 300px;
+
+        }
+
+        #contents section {
+            border: 1px solid red;
+            width: 700px;
+            height: 300px;
+            float: left;
+            background-color: thistle;
+        }
+
+        #contents section article:first-child {
+            margin-bottom: 20px;
+            height: 150px;
+            padding: 10px;
+        }
+
+        #contents section article:last-child {
+            height: 130px;
+            padding: 10px;
+        }
+
+        #contents section article p {
+            border: 1px solid green;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        #contents aside {
+            height: 300px;
+            border: 1px solid blue;
+            width: 280px;
+            float: right;
+        }
+
+        footer {
+            clear: both;
+            background-color: lightseagreen;
+            text-align: center;
+        }
+
+        .clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 시맨틱 ( semantic ) 태그  -->
+            <!-- 태그의 이름만 봐도 의미를 알 수 있는 태그  -->
+            <h1>사이트 제목</h1>
+        </header>
+        <div id="contents" class="clear">
+            <section>
+                <article>
+                    <p>
+                        You're my favorite flavor, bubble gum
+                        Bubble, bubble, bubble, bubble, bubble, bubble
+                        Bubble, bubble, bubble gum
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        You're my favorite flavor, bubble gum
+                        Bubble, bubble, bubble, bubble, bubble, bubble
+                        Bubble, bubble, bubble gum</p>
+                </article>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem quae ipsam
+                    voluptates amet unde odit, dignissimos earum harum magnam praesentium, quisquam ratione! Porro autem
+                    nesciunt in debitis veniam ullam?
+                </article>
+            </section>
+            <aside>
+                <h2>위대하신 광고주님</h2>
+                <p>오늘도 일용할 양식을 주셔서 배고픔을 덜었습니다.</p>
+                <p>개발이 안되면 경수스쿨~</p>
+            </aside>
+        </div>
+        <footer>
+            <h2>푸터</h2>
+            <p>&copy;DS Company</p>
+        </footer>
+    </div>
+</body>
+
+</html>
