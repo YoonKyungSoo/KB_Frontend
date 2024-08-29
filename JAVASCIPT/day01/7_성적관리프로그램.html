@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 관리 프로그램</title>
+</head>
+
+<body>
+    <h2>성적 관리 프로그램</h2>
+    <div id="result"></div>
+
+    <script>
+        // 대화상자로 이름, 국어 점수, 영어 점수, 수학 점수를 입력받고
+        // 총점과 평균점수(소수점 2자리까지 )를 페이지에 출력하기
+        let name = prompt("이름을 입력해보세요");
+        let korean = Number(prompt("국어 점수를 입력해보세요"));
+        let english = Number(prompt("영어 점수를 입력해보세요"));
+        let math = Number(prompt("수학 점수를 입력해보세요"));
+
+
+        let total = korean + english + math;
+        let average = total / 3;
+        average = average.toFixed(2);
+
+
+        document.getElementById('result').innerHTML = `
+            <p>학생 이름: ${name}</p>
+            <p>총점: ${total}</p>
+            <p>평균 점수: ${average}</p>
+        `;
+    </script>
+</body>
+
+</html>
