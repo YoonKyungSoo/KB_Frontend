@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리 - 1</title>
+    
+    <style>
+        h2::before {
+            content: "1. ";
+        }
+
+        h2:after {
+            content: " - 기본";
+        }
+
+        #lyric {
+            width: 1400px;
+            border: 1px solid gray;
+        }
+
+        /* 
+        데스크탑
+        1920~1024
+        */
+        @media screen and (max-width : 1280px) {
+            body {
+                background-color: red;
+            }
+
+            h2::before {
+                content: "1. ";
+            }
+
+            h2:after {
+                content: " - 0px ~ 1280px";
+            }
+
+            #lyric {
+                width: 1000px;
+
+            }
+
+            @media screen and (max-width: 1024px) {
+                body {
+                    background-color: beige;
+                }
+
+                h2:before {
+                    content: "3. "
+                }
+
+                h2:after {
+                    content: "- 0px ~ 1024px";
+                }
+            }
+
+            /* 노트북
+        768px~960px
+        */
+
+            @media screen and (max-width :960px) {}
+
+            body {
+                background-color: pink;
+                color: darkblue;
+            }
+
+            h2:before {
+                content: "4. "
+            }
+
+            h2:after {
+                content: "- 0px ~ 960px";
+            }
+
+            #lyric {
+                width: 750px;
+            }
+
+            /* 
+테블릿
+580 ~ 768
+*/
+            @media screen and (max-width: 768px) {
+                body {
+                    background-color: cadetblue;
+                    color: red;
+                }
+            }
+            h2:before {
+                content: "5. "
+            }
+
+            h2:after {
+                content: "- 0px ~ 760px";
+            }
+            #lyric {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <H2>미디어 쿼리</H2>
+    <p>미디어 쿼리는 화면 크기에 따른 각각의 속성 값을 지정하여, 여러개의 화면을 구성하는 기술이다. </p>
+    <div id="lyric">
+
+
+    </div>
+
+</body>
+
+</html>
